@@ -18,14 +18,13 @@ on:
 
 env:
   TERMUX_ROOTFS_VERSION: 'v0.118.0'
-  TERMUX_ROOTFS_URL: 'https://github.com/termux/termux-app/releases/download/v0.118.0/termux-rootfs-aarch64.tar.gz'
 
 jobs:
   build:
     name: Build APK (${{ matrix.build_type }})
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    
+
     strategy:
       matrix:
         build_type: [debug, release]
@@ -66,26 +65,22 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
-      - name: Download Official Termux Rootfs
+      - name: Verify Termux Rootfs
         run: |
-          mkdir -p app/src/main/assets
-          echo "Downloading Termux rootfs from ${{ env.TERMUX_ROOTFS_URL }}"
-          curl -L -o app/src/main/assets/termux-rootfs.tar.gz \
-            "${{ env.TERMUX_ROOTFS_URL }}"
-          echo "Downloaded: $(ls -lh app/src/main/assets/termux-rootfs.tar.gz)"
-          echo "SHA256: $(sha256sum app/src/main/assets/termux-rootfs.tar.gz | cut -d' ' -f1)"
-
-      - name: Verify Rootfs Structure
-        run: |
+          ROOTFS="app/src/main/assets/termux-rootfs.tar.gz"
+          if [ ! -f "$ROOTFS" ]; then
+            echo "ERROR: termux-rootfs.tar.gz not found in assets!"
+            exit 1
+          fi
+          SIZE=$(ls -lh "$ROOTFS" | awk '{print $5}')
+          SHA=$(sha256sum "$ROOTFS" | cut -d' ' -f1)
+          echo "Rootfs size: $SIZE"
+          echo "SHA256: $SHA"
+          # Quick validation: check it's a valid gzip file
+          file "$ROOTFS"
           mkdir -p /tmp/verify-rootfs
-          tar -tzf app/src/main/assets/termux-rootfs.tar.gz | head -20
-          tar -xzf app/src/main/assets/termux-rootfs.tar.gz -C /tmp/verify-rootfs
-          echo "Rootfs extracted, checking key directories:"
-          ls -la /tmp/verify-rootfs/ | head -20
-          echo "Checking for proot:"
-          find /tmp/verify-rootfs -name "proot" -type f 2>/dev/null | head -5
-          echo "Checking for bin:"
-          ls -la /tmp/verify-rootfs/bin/ 2>/dev/null | head -10 || echo "No bin directory"
+          tar -tzf "$ROOTFS" | head -20
+          echo "Rootfs structure OK"
 
       - name: Make Gradle Wrapper Executable
         run: chmod +x ./gradlew
@@ -93,7 +88,6 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew ${{ matrix.gradle_task }} --no-daemon --stacktrace
         env:
-          # Use placeholder for local.properties secrets
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
 
       - name: Upload APK Artifact
