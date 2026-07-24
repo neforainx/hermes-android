@@ -7,13 +7,13 @@ pluginManagement {
     resolutionStrategy {
         eachPlugin {
             if (requested.id.id == "com.android.application") {
-                useVersion("8.5.0")
+                useVersion(libs.versions.agp.get())
             }
             if (requested.id.id == "org.jetbrains.kotlin.android") {
-                useVersion("1.9.20")
+                useVersion(libs.versions.kotlin.get())
             }
             if (requested.id.id == "com.google.devtools.ksp") {
-                useVersion("1.9.20-1.0.14")
+                useVersion(libs.versions.ksp.get())
             }
         }
     }
