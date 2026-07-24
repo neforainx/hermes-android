@@ -1,0 +1,345 @@
+{
+  "communities": {
+    "0": [
+      "androidx",
+      "color",
+      "context",
+      "mainactivity",
+      "mainactivity_addcronjobdialog",
+      "mainactivity_agentchatscreen",
+      "mainactivity_agentthinkingplaceholder",
+      "mainactivity_basictextfield",
+      "mainactivity_cronjobitemrow",
+      "mainactivity_customdropdownselector",
+      "mainactivity_daemoncommandcenterscreen",
+      "mainactivity_hermeslogocompose",
+      "mainactivity_integrationsscreen",
+      "mainactivity_kt_cronviewmodel",
+      "mainactivity_kt_modifier",
+      "mainactivity_kt_petviewmodel",
+      "mainactivity_kt_skillviewmodel",
+      "mainactivity_localdropdown",
+      "mainactivity_mainscreen",
+      "mainactivity_messagerow",
+      "mainactivity_metricmeteritem",
+      "mainactivity_processclicommand",
+      "mainactivity_stepfivereviewview",
+      "mainactivity_stepfourgatewayview",
+      "mainactivity_steponepathsview",
+      "mainactivity_stepthreesandboxview",
+      "mainactivity_steptwocognitiveview",
+      "mainactivity_termuxmetrics",
+      "mainactivity_termuxsystemstatusbar",
+      "mainactivity_tuiterminalscreen"
+    ],
+    "1": [
+      "flow",
+      "mainactivity_skillitemrow",
+      "room",
+      "room_appdatabase",
+      "room_appdatabase_cronjobdao",
+      "room_appdatabase_messagedao",
+      "room_appdatabase_petstatedao",
+      "room_appdatabase_skilldao",
+      "room_cronjobdao",
+      "room_cronjobdao_deletejobbyid",
+      "room_cronjobdao_getalljobs",
+      "room_cronjobdao_insertjob",
+      "room_cronjobdao_updatejob",
+      "room_cronjobentity",
+      "room_messagedao",
+      "room_messagedao_clearallmessages",
+      "room_messagedao_getallmessages",
+      "room_messagedao_insertmessage",
+      "room_messageentity",
+      "room_petstatedao",
+      "room_petstatedao_getpetstatedirect",
+      "room_petstatedao_getpetstateflow",
+      "room_petstatedao_insertorupdatepetstate",
+      "room_petstateentity",
+      "room_skilldao",
+      "room_skilldao_getallskills",
+      "room_skilldao_insertskills",
+      "room_skilldao_setskillinstalled",
+      "room_skillentity",
+      "roomdatabase"
+    ],
+    "2": [
+      "app_src_main_kotlin_com_example_api_openrouterclient",
+      "app_src_main_kotlin_com_example_api_openrouterclient_networkclient",
+      "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice",
+      "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice_generatecontent",
+      "app_src_main_kotlin_com_example_api_openrouterclient_openrouterchoice",
+      "app_src_main_kotlin_com_example_api_openrouterclient_openrouterclient",
+      "app_src_main_kotlin_com_example_api_openrouterclient_openroutererror",
+      "app_src_main_kotlin_com_example_api_openrouterclient_openroutermessage",
+      "app_src_main_kotlin_com_example_api_openrouterclient_openrouterrequest",
+      "app_src_main_kotlin_com_example_api_openrouterclient_openrouterresponse",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_getcustomservice",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesettings",
+      "geminiapi",
+      "geminiapi_candidate",
+      "geminiapi_content",
+      "geminiapi_geminiapiservice",
+      "geminiapi_geminiapiservice_generatecontent",
+      "geminiapi_generatecontentrequest",
+      "geminiapi_generatecontentresponse",
+      "geminiapi_generationconfig",
+      "geminiapi_part",
+      "geminiapi_retrofitclient",
+      "geminiapi_withio",
+      "t"
+    ],
+    "3": [
+      "android",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_clearhistory",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_logtoterminal",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_oncleared",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_setterminalfontsize",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_speak",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatecustomsettings",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updategatewayconfig",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updategatewayfields",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesandboxconfig",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesoulmd",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider_getdatabase",
+      "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_kt_androidviewmodel",
+      "stateflow",
+      "texttospeech"
+    ],
+    "4": [
+      "app_src_main_kotlin_com_example_mainactivity",
+      "app_src_main_kotlin_com_example_mainactivity_agentchatscreen",
+      "app_src_main_kotlin_com_example_mainactivity_agentthinkingplaceholder",
+      "app_src_main_kotlin_com_example_mainactivity_daemoncommandcenterscreen",
+      "app_src_main_kotlin_com_example_mainactivity_hermesapptheme",
+      "app_src_main_kotlin_com_example_mainactivity_hermeslogocompose",
+      "app_src_main_kotlin_com_example_mainactivity_integrationsscreen",
+      "app_src_main_kotlin_com_example_mainactivity_kt_bundle",
+      "app_src_main_kotlin_com_example_mainactivity_kt_componentactivity",
+      "app_src_main_kotlin_com_example_mainactivity_kt_cronviewmodel",
+      "app_src_main_kotlin_com_example_mainactivity_kt_modifier",
+      "app_src_main_kotlin_com_example_mainactivity_kt_petviewmodel",
+      "app_src_main_kotlin_com_example_mainactivity_kt_skillviewmodel",
+      "app_src_main_kotlin_com_example_mainactivity_mainactivity",
+      "app_src_main_kotlin_com_example_mainactivity_mainactivity_oncreate",
+      "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "app_src_main_kotlin_com_example_mainactivity_messagerow",
+      "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen"
+    ],
+    "5": [
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_kt_androidviewmodel",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalsession",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_addnewterminalsession",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_clearallterminallogs",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_clearallterminalsessions",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_decreaseterminalfontsize",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_increaseterminalfontsize",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_logtoactiveterminal",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_logtoterminal",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_processclicommand",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_removeterminalsession",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_setactiveterminaldir",
+      "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_setterminalfontsize"
+    ],
+    "6": [
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_kt_androidviewmodel",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_setterminalfontsize",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatecustomsettings",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updategatewayconfig",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updategatewayfields",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesandboxconfig",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesettings",
+      "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesoulmd"
+    ],
+    "7": [
+      "mainactivity_hermesapptheme",
+      "mainactivity_kt_bundle",
+      "mainactivity_kt_componentactivity",
+      "mainactivity_mainactivity",
+      "mainactivity_mainactivity_oncreate"
+    ],
+    "8": [
+      "app_src_main_kotlin_com_example_api_networkclient",
+      "app_src_main_kotlin_com_example_api_networkclient_networkclient"
+    ],
+    "9": [
+      "app_build_gradle"
+    ],
+    "10": [
+      "build_gradle"
+    ],
+    "11": [
+      "settings_gradle"
+    ]
+  },
+  "cohesion": {
+    "0": 0.15172413793103448,
+    "1": 0.10574712643678161,
+    "2": 0.11333333333333333,
+    "3": 0.11764705882352941,
+    "4": 0.19607843137254902,
+    "5": 0.19047619047619047,
+    "6": 0.2909090909090909,
+    "7": 0.4,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0
+  },
+  "gods": [
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "label": "ChatViewModel",
+      "degree": 27
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "label": "TerminalViewModel",
+      "degree": 14
+    },
+    {
+      "id": "mainactivity_daemoncommandcenterscreen",
+      "label": "DaemonCommandCenterScreen()",
+      "degree": 13
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "label": "SettingsViewModel",
+      "degree": 13
+    },
+    {
+      "id": "mainactivity_tuiterminalscreen",
+      "label": "TuiTerminalScreen()",
+      "degree": 9
+    },
+    {
+      "id": "mainactivity_integrationsscreen",
+      "label": "IntegrationsScreen()",
+      "degree": 9
+    },
+    {
+      "id": "mainactivity_processclicommand",
+      "label": "processCliCommand()",
+      "degree": 8
+    },
+    {
+      "id": "room_appdatabase",
+      "label": "AppDatabase",
+      "degree": 8
+    },
+    {
+      "id": "mainactivity_mainscreen",
+      "label": "MainScreen()",
+      "degree": 7
+    },
+    {
+      "id": "room_messageentity",
+      "label": "MessageEntity",
+      "degree": 7
+    }
+  ],
+  "surprises": [
+    {
+      "source": "AgentChatScreen()",
+      "target": "ChatViewModel",
+      "source_files": [
+        "MainActivity.kt",
+        "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "MessageRow()",
+      "target": "MessageEntity",
+      "source_files": [
+        "MainActivity.kt",
+        "Room.kt"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "TuiTerminalScreen()",
+      "target": "ChatViewModel",
+      "source_files": [
+        "MainActivity.kt",
+        "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "processCliCommand()",
+      "target": "ChatViewModel",
+      "source_files": [
+        "MainActivity.kt",
+        "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "DaemonCommandCenterScreen()",
+      "target": "ChatViewModel",
+      "source_files": [
+        "MainActivity.kt",
+        "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `ChatViewModel` connect `Community 3` to `Community 0`, `Community 1`, `Community 2`, `Community 4`?",
+      "why": "High betweenness centrality (0.579) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `MessageEntity` connect `Community 1` to `Community 0`, `Community 2`, `Community 3`, `Community 4`?",
+      "why": "High betweenness centrality (0.224) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `TuiTerminalScreen()` connect `Community 4` to `Community 3`, `Community 5`?",
+      "why": "High betweenness centrality (0.202) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `GenerationConfig`, `Candidate`, `NetworkClient` to the rest of the system?",
+      "why": "6 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 1` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10574712643678161 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 2` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11333333333333333 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 3` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

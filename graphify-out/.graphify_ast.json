@@ -1,0 +1,4068 @@
+{
+  "nodes": [
+    {
+      "id": "geminiapi",
+      "label": "GeminiApi.kt",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_generatecontentrequest",
+      "label": "GenerateContentRequest",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_content",
+      "label": "Content",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L26",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_part",
+      "label": "Part",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L32",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_generationconfig",
+      "label": "GenerationConfig",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_generatecontentresponse",
+      "label": "GenerateContentResponse",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L45",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_candidate",
+      "label": "Candidate",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L50",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_geminiapiservice",
+      "label": "GeminiApiService",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L55",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_geminiapiservice_generatecontent",
+      "label": ".generateContent()",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L56",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_retrofitclient",
+      "label": "RetrofitClient",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L64",
+      "_origin": "ast"
+    },
+    {
+      "id": "geminiapi_withio",
+      "label": "withIO()",
+      "file_type": "code",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L99",
+      "_origin": "ast"
+    },
+    {
+      "id": "t",
+      "label": "T",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity",
+      "label": "MainActivity.kt",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_hermeslogocompose",
+      "label": "HermesLogoCompose()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L69",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_kt_modifier",
+      "label": "Modifier",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_mainactivity",
+      "label": "MainActivity",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L86",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_kt_componentactivity",
+      "label": "ComponentActivity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_mainactivity_oncreate",
+      "label": ".onCreate()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L87",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_kt_bundle",
+      "label": "Bundle",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_hermesapptheme",
+      "label": "HermesAppTheme()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L103",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_mainscreen",
+      "label": "MainScreen()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L138",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_agentchatscreen",
+      "label": "AgentChatScreen()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L264",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_messagerow",
+      "label": "MessageRow()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L695",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_agentthinkingplaceholder",
+      "label": "AgentThinkingPlaceholder()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L791",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_termuxmetrics",
+      "label": "TermuxMetrics",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L815",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_metricmeteritem",
+      "label": "MetricMeterItem()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L825",
+      "_origin": "ast"
+    },
+    {
+      "id": "color",
+      "label": "Color",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_termuxsystemstatusbar",
+      "label": "TermuxSystemStatusBar()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L867",
+      "_origin": "ast"
+    },
+    {
+      "id": "context",
+      "label": "Context",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_tuiterminalscreen",
+      "label": "TuiTerminalScreen()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1044",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_kt_petviewmodel",
+      "label": "PetViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_kt_cronviewmodel",
+      "label": "CronViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_kt_skillviewmodel",
+      "label": "SkillViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_processclicommand",
+      "label": "processCliCommand()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1545",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_daemoncommandcenterscreen",
+      "label": "DaemonCommandCenterScreen()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2194",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_steponepathsview",
+      "label": "StepOnePathsView()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2881",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_steptwocognitiveview",
+      "label": "StepTwoCognitiveView()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3064",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_stepthreesandboxview",
+      "label": "StepThreeSandboxView()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3307",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_localdropdown",
+      "label": "LocalDropdown()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3418",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_customdropdownselector",
+      "label": "CustomDropdownSelector()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3439",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_stepfourgatewayview",
+      "label": "StepFourGatewayView()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3511",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_stepfivereviewview",
+      "label": "StepFiveReviewView()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L4467",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_integrationsscreen",
+      "label": "IntegrationsScreen()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L4682",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_skillitemrow",
+      "label": "SkillItemRow()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5215",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_cronjobitemrow",
+      "label": "CronJobItemRow()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5284",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_addcronjobdialog",
+      "label": "AddCronJobDialog()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5357",
+      "_origin": "ast"
+    },
+    {
+      "id": "mainactivity_basictextfield",
+      "label": "BasicTextField()",
+      "file_type": "code",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5417",
+      "_origin": "ast"
+    },
+    {
+      "id": "androidx",
+      "label": "androidx",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "room",
+      "label": "Room.kt",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_messageentity",
+      "label": "MessageEntity",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_cronjobentity",
+      "label": "CronJobEntity",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_skillentity",
+      "label": "SkillEntity",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L28",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_petstateentity",
+      "label": "PetStateEntity",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_messagedao",
+      "label": "MessageDao",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L51",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_messagedao_getallmessages",
+      "label": ".getAllMessages()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L53",
+      "_origin": "ast"
+    },
+    {
+      "id": "flow",
+      "label": "Flow",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_messagedao_insertmessage",
+      "label": ".insertMessage()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L56",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_messagedao_clearallmessages",
+      "label": ".clearAllMessages()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L59",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_cronjobdao",
+      "label": "CronJobDao",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L63",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_cronjobdao_getalljobs",
+      "label": ".getAllJobs()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L65",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_cronjobdao_insertjob",
+      "label": ".insertJob()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L68",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_cronjobdao_updatejob",
+      "label": ".updateJob()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L71",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_cronjobdao_deletejobbyid",
+      "label": ".deleteJobById()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_skilldao",
+      "label": "SkillDao",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L78",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_skilldao_getallskills",
+      "label": ".getAllSkills()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L80",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_skilldao_insertskills",
+      "label": ".insertSkills()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_skilldao_setskillinstalled",
+      "label": ".setSkillInstalled()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L86",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_petstatedao",
+      "label": "PetStateDao",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L90",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_petstatedao_getpetstateflow",
+      "label": ".getPetStateFlow()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L92",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_petstatedao_getpetstatedirect",
+      "label": ".getPetStateDirect()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L95",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_petstatedao_insertorupdatepetstate",
+      "label": ".insertOrUpdatePetState()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L98",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_appdatabase",
+      "label": "AppDatabase",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L104",
+      "_origin": "ast"
+    },
+    {
+      "id": "roomdatabase",
+      "label": "RoomDatabase",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_appdatabase_messagedao",
+      "label": ".messageDao()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L110",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_appdatabase_cronjobdao",
+      "label": ".cronJobDao()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L111",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_appdatabase_skilldao",
+      "label": ".skillDao()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L112",
+      "_origin": "ast"
+    },
+    {
+      "id": "room_appdatabase_petstatedao",
+      "label": ".petStateDao()",
+      "file_type": "code",
+      "source_file": "Room.kt",
+      "source_location": "L113",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_build_gradle",
+      "label": "build.gradle.kts",
+      "file_type": "code",
+      "source_file": "app/build.gradle.kts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity",
+      "label": "MainActivity.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_hermeslogocompose",
+      "label": "HermesLogoCompose()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L71",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_kt_modifier",
+      "label": "Modifier",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_mainactivity",
+      "label": "MainActivity",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L88",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_kt_componentactivity",
+      "label": "ComponentActivity",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_mainactivity_oncreate",
+      "label": ".onCreate()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L89",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_kt_bundle",
+      "label": "Bundle",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_hermesapptheme",
+      "label": "HermesAppTheme()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L105",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "label": "MainScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L140",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_agentchatscreen",
+      "label": "AgentChatScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L268",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen",
+      "label": "TuiTerminalScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L695",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_kt_petviewmodel",
+      "label": "PetViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_kt_cronviewmodel",
+      "label": "CronViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_kt_skillviewmodel",
+      "label": "SkillViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_daemoncommandcenterscreen",
+      "label": "DaemonCommandCenterScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L710",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_integrationsscreen",
+      "label": "IntegrationsScreen()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L723",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_messagerow",
+      "label": "MessageRow()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L736",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_mainactivity_agentthinkingplaceholder",
+      "label": "AgentThinkingPlaceholder()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L832",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_networkclient",
+      "label": "NetworkClient.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/NetworkClient.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_networkclient_networkclient",
+      "label": "NetworkClient",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/NetworkClient.kt",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "label": "OpenRouterClient.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_networkclient",
+      "label": "NetworkClient",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_openroutermessage",
+      "label": "OpenRouterMessage",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterrequest",
+      "label": "OpenRouterRequest",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L43",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterresponse",
+      "label": "OpenRouterResponse",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L49",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterchoice",
+      "label": "OpenRouterChoice",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L55",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_openroutererror",
+      "label": "OpenRouterError",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L60",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice",
+      "label": "OpenRouterApiService",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L65",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice_generatecontent",
+      "label": ".generateContent()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterclient",
+      "label": "OpenRouterClient",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L74",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel",
+      "label": "ChatViewModel.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider",
+      "label": "DatabaseProvider",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L30",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider_getdatabase",
+      "label": ".getDatabase()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "android",
+      "label": "android",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "label": "ChatViewModel",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L49",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_kt_androidviewmodel",
+      "label": "AndroidViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "texttospeech",
+      "label": "TextToSpeech",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_speak",
+      "label": ".speak()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L68",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_oncleared",
+      "label": ".onCleared()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L72",
+      "_origin": "ast"
+    },
+    {
+      "id": "stateflow",
+      "label": "StateFlow",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesettings",
+      "label": ".updateSettings()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L83",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatecustomsettings",
+      "label": ".updateCustomSettings()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L87",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesoulmd",
+      "label": ".updateSoulMd()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L91",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesandboxconfig",
+      "label": ".updateSandboxConfig()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L95",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updategatewayconfig",
+      "label": ".updateGatewayConfig()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L99",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updategatewayfields",
+      "label": ".updateGatewayFields()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L103",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_setterminalfontsize",
+      "label": ".setTerminalFontSize()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L107",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_logtoterminal",
+      "label": ".logToTerminal()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L139",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "label": ".sendMessage()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L143",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_clearhistory",
+      "label": ".clearHistory()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L371",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_getcustomservice",
+      "label": ".getCustomService()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L378",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel",
+      "label": "SettingsViewModel.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "label": "SettingsViewModel",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_kt_androidviewmodel",
+      "label": "AndroidViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesettings",
+      "label": ".updateSettings()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L62",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatecustomsettings",
+      "label": ".updateCustomSettings()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L77",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesandboxconfig",
+      "label": ".updateSandboxConfig()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L90",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updategatewayconfig",
+      "label": ".updateGatewayConfig()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L107",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updategatewayfields",
+      "label": ".updateGatewayFields()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L120",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesoulmd",
+      "label": ".updateSoulMd()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L143",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_setterminalfontsize",
+      "label": ".setTerminalFontSize()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L149",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "label": ".logToTerminal()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L155",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel",
+      "label": "TerminalViewModel.kt",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalsession",
+      "label": "TerminalSession",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "label": "TerminalViewModel",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_kt_androidviewmodel",
+      "label": "AndroidViewModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_setterminalfontsize",
+      "label": ".setTerminalFontSize()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L34",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_increaseterminalfontsize",
+      "label": ".increaseTerminalFontSize()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L41",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_decreaseterminalfontsize",
+      "label": ".decreaseTerminalFontSize()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L42",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_addnewterminalsession",
+      "label": ".addNewTerminalSession()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L62",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_removeterminalsession",
+      "label": ".removeTerminalSession()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L79",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_clearallterminalsessions",
+      "label": ".clearAllTerminalSessions()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L89",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_logtoactiveterminal",
+      "label": ".logToActiveTerminal()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L107",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_setactiveterminaldir",
+      "label": ".setActiveTerminalDir()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L120",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_logtoterminal",
+      "label": ".logToTerminal()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L140",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_processclicommand",
+      "label": ".processCliCommand()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L149",
+      "_origin": "ast"
+    },
+    {
+      "id": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_clearallterminallogs",
+      "label": ".clearAllTerminalLogs()",
+      "file_type": "code",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L202",
+      "_origin": "ast"
+    },
+    {
+      "id": "build_gradle",
+      "label": "build.gradle.kts",
+      "file_type": "code",
+      "source_file": "build.gradle.kts",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "settings_gradle",
+      "label": "settings.gradle.kts",
+      "file_type": "code",
+      "source_file": "settings.gradle.kts",
+      "source_location": "L1",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_generatecontentrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_content",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_part",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_generationconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_generatecontentresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_candidate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_geminiapiservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi_geminiapiservice",
+      "target": "geminiapi_geminiapiservice_generatecontent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi_geminiapiservice_generatecontent",
+      "target": "geminiapi_generatecontentrequest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi_geminiapiservice_generatecontent",
+      "target": "geminiapi_generatecontentresponse",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_retrofitclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi_retrofitclient",
+      "target": "geminiapi_geminiapiservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L81",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi",
+      "target": "geminiapi_withio",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "geminiapi_withio",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "GeminiApi.kt",
+      "source_location": "L99",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_hermeslogocompose",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_hermeslogocompose",
+      "target": "mainactivity_kt_modifier",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L69",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_mainactivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainactivity",
+      "target": "mainactivity_kt_componentactivity",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainactivity",
+      "target": "mainactivity_mainactivity_oncreate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainactivity_oncreate",
+      "target": "mainactivity_kt_bundle",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L87",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_hermesapptheme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_mainscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_agentchatscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L264",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_agentchatscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L264",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_messagerow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L695",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_messagerow",
+      "target": "room_messageentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L695",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_agentthinkingplaceholder",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L791",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_termuxmetrics",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L815",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_metricmeteritem",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L825",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_metricmeteritem",
+      "target": "color",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L825",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_metricmeteritem",
+      "target": "mainactivity_kt_modifier",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L825",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_termuxsystemstatusbar",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L867",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_termuxsystemstatusbar",
+      "target": "context",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L867",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_tuiterminalscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1044",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_tuiterminalscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1044",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_tuiterminalscreen",
+      "target": "mainactivity_kt_petviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1044",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_tuiterminalscreen",
+      "target": "mainactivity_kt_cronviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1044",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_tuiterminalscreen",
+      "target": "mainactivity_kt_skillviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1044",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_processclicommand",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1545",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_processclicommand",
+      "target": "context",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1545",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_processclicommand",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1545",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_processclicommand",
+      "target": "mainactivity_kt_petviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1545",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_processclicommand",
+      "target": "mainactivity_kt_cronviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1545",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_processclicommand",
+      "target": "mainactivity_kt_skillviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1545",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_daemoncommandcenterscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2194",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2194",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_kt_cronviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2194",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_kt_skillviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2194",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_kt_petviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2194",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_steponepathsview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2881",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_steptwocognitiveview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3064",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_stepthreesandboxview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3307",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_localdropdown",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3418",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_customdropdownselector",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3439",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_stepfourgatewayview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3511",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_stepfivereviewview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L4467",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_integrationsscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L4682",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_integrationsscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L4682",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_integrationsscreen",
+      "target": "mainactivity_kt_cronviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L4682",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_integrationsscreen",
+      "target": "mainactivity_kt_skillviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L4682",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_skillitemrow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5215",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_skillitemrow",
+      "target": "room_skillentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5215",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_skillitemrow",
+      "target": "mainactivity_kt_skillviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5215",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_cronjobitemrow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5284",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_cronjobitemrow",
+      "target": "room_cronjobentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5284",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_cronjobitemrow",
+      "target": "mainactivity_kt_cronviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5284",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_addcronjobdialog",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5357",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity",
+      "target": "mainactivity_basictextfield",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5417",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_basictextfield",
+      "target": "mainactivity_kt_modifier",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5417",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_basictextfield",
+      "target": "androidx",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5417",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_basictextfield",
+      "target": "androidx",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5417",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainactivity_oncreate",
+      "target": "mainactivity_hermesapptheme",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainactivity_oncreate",
+      "target": "mainactivity_mainscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainscreen",
+      "target": "mainactivity_hermeslogocompose",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainscreen",
+      "target": "mainactivity_agentchatscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L253",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainscreen",
+      "target": "mainactivity_tuiterminalscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L254",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainscreen",
+      "target": "mainactivity_daemoncommandcenterscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L255",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_mainscreen",
+      "target": "mainactivity_integrationsscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L256",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_agentchatscreen",
+      "target": "mainactivity_messagerow",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L467",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_agentchatscreen",
+      "target": "mainactivity_agentthinkingplaceholder",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L472",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_termuxsystemstatusbar",
+      "target": "mainactivity_termuxmetrics",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L872",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_termuxsystemstatusbar",
+      "target": "mainactivity_metricmeteritem",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1013",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_tuiterminalscreen",
+      "target": "mainactivity_termuxsystemstatusbar",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1318",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_tuiterminalscreen",
+      "target": "mainactivity_basictextfield",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1488",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_tuiterminalscreen",
+      "target": "mainactivity_processclicommand",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L1526",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_processclicommand",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2379",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "color",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2385",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_steponepathsview",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2521",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_steptwocognitiveview",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2597",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_stepthreesandboxview",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2605",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_stepfourgatewayview",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2617",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_daemoncommandcenterscreen",
+      "target": "mainactivity_stepfivereviewview",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L2695",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_steptwocognitiveview",
+      "target": "mainactivity_localdropdown",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3197",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_localdropdown",
+      "target": "mainactivity_customdropdownselector",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3426",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_stepfourgatewayview",
+      "target": "mainactivity_localdropdown",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L3900",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_integrationsscreen",
+      "target": "mainactivity_hermeslogocompose",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L4779",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_integrationsscreen",
+      "target": "mainactivity_skillitemrow",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5166",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_integrationsscreen",
+      "target": "mainactivity_cronjobitemrow",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5199",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "mainactivity_integrationsscreen",
+      "target": "mainactivity_addcronjobdialog",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "MainActivity.kt",
+      "source_location": "L5204",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_messageentity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_cronjobentity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_skillentity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L28",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_petstateentity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_messagedao",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_messagedao",
+      "target": "room_messagedao_getallmessages",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_messagedao_getallmessages",
+      "target": "flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_messagedao_getallmessages",
+      "target": "room_messageentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L53",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_messagedao",
+      "target": "room_messagedao_insertmessage",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_messagedao_insertmessage",
+      "target": "room_messageentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L56",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_messagedao",
+      "target": "room_messagedao_clearallmessages",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_cronjobdao",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_cronjobdao",
+      "target": "room_cronjobdao_getalljobs",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_cronjobdao_getalljobs",
+      "target": "flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_cronjobdao_getalljobs",
+      "target": "room_cronjobentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_cronjobdao",
+      "target": "room_cronjobdao_insertjob",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_cronjobdao_insertjob",
+      "target": "room_cronjobentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L68",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_cronjobdao",
+      "target": "room_cronjobdao_updatejob",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_cronjobdao_updatejob",
+      "target": "room_cronjobentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L71",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_cronjobdao",
+      "target": "room_cronjobdao_deletejobbyid",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_skilldao",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_skilldao",
+      "target": "room_skilldao_getallskills",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_skilldao_getallskills",
+      "target": "flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L80",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_skilldao_getallskills",
+      "target": "room_skillentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L80",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_skilldao",
+      "target": "room_skilldao_insertskills",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_skilldao_insertskills",
+      "target": "room_skillentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L83",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_skilldao",
+      "target": "room_skilldao_setskillinstalled",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_petstatedao",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_petstatedao",
+      "target": "room_petstatedao_getpetstateflow",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_petstatedao_getpetstateflow",
+      "target": "flow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L92",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_petstatedao_getpetstateflow",
+      "target": "room_petstateentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L92",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_petstatedao",
+      "target": "room_petstatedao_getpetstatedirect",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_petstatedao_getpetstatedirect",
+      "target": "room_petstateentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L95",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_petstatedao",
+      "target": "room_petstatedao_insertorupdatepetstate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_petstatedao_insertorupdatepetstate",
+      "target": "room_petstateentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L98",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room",
+      "target": "room_appdatabase",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase",
+      "target": "roomdatabase",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase",
+      "target": "room_appdatabase_messagedao",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase_messagedao",
+      "target": "room_messagedao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L110",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase",
+      "target": "room_appdatabase_cronjobdao",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase_cronjobdao",
+      "target": "room_cronjobdao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L111",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase",
+      "target": "room_appdatabase_skilldao",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase_skilldao",
+      "target": "room_skilldao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L112",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase",
+      "target": "room_appdatabase_petstatedao",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "room_appdatabase_petstatedao",
+      "target": "room_petstatedao",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "Room.kt",
+      "source_location": "L113",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_hermeslogocompose",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_hermeslogocompose",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_modifier",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L71",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_mainactivity",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_componentactivity",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_mainactivity_oncreate",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainactivity_oncreate",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_bundle",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L89",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_hermesapptheme",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_agentchatscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L268",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_agentchatscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L268",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_agentchatscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L268",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L695",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L695",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L695",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_petviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L695",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_cronviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L695",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_skillviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L695",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_daemoncommandcenterscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L710",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_daemoncommandcenterscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L710",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_daemoncommandcenterscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_cronviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L710",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_daemoncommandcenterscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_skillviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L710",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_daemoncommandcenterscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L710",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_integrationsscreen",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L723",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_integrationsscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L723",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_integrationsscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_cronviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L723",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_integrationsscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_kt_skillviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L723",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_integrationsscreen",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L723",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_messagerow",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L736",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_messagerow",
+      "target": "room_messageentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L736",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity",
+      "target": "app_src_main_kotlin_com_example_mainactivity_agentthinkingplaceholder",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L832",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainactivity_oncreate",
+      "target": "app_src_main_kotlin_com_example_mainactivity_hermesapptheme",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainactivity_oncreate",
+      "target": "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_hermeslogocompose",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_agentchatscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L257",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_tuiterminalscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L258",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_daemoncommandcenterscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L259",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_mainscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_integrationsscreen",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_agentchatscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_messagerow",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L466",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_mainactivity_agentchatscreen",
+      "target": "app_src_main_kotlin_com_example_mainactivity_agentthinkingplaceholder",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/MainActivity.kt",
+      "source_location": "L471",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_networkclient",
+      "target": "app_src_main_kotlin_com_example_api_networkclient_networkclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/NetworkClient.kt",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_networkclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openroutermessage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterrequest",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterresponse",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterchoice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openroutererror",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice_generatecontent",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice_generatecontent",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterrequest",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L66",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice_generatecontent",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterresponse",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L66",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterclient",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterclient",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/api/OpenRouterClient.kt",
+      "source_location": "L75",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider",
+      "target": "room_appdatabase",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L31",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider_getdatabase",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider_getdatabase",
+      "target": "android",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_databaseprovider_getdatabase",
+      "target": "room_appdatabase",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L33",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_kt_androidviewmodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "texttospeech",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L58",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_speak",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_oncleared",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "stateflow",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L78",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "room_messageentity",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L78",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesettings",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatecustomsettings",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesoulmd",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesandboxconfig",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L95",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updategatewayconfig",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updategatewayfields",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_setterminalfontsize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_logtoterminal",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_clearhistory",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L371",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_getcustomservice",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L378",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_getcustomservice",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterapiservice",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L378",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "room_messageentity",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_logtoterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L157",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_updatesettings",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L178",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_getcustomservice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L344",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_clearhistory",
+      "target": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_logtoterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L374",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_kt_androidviewmodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesettings",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatecustomsettings",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesandboxconfig",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updategatewayconfig",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updategatewayfields",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesoulmd",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_setterminalfontsize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L155",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesettings",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatecustomsettings",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesandboxconfig",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updategatewayconfig",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updategatewayfields",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_updatesoulmd",
+      "target": "app_src_main_kotlin_com_example_viewmodel_settingsviewmodel_settingsviewmodel_logtoterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/SettingsViewModel.kt",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_kt_androidviewmodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_setterminalfontsize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_increaseterminalfontsize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_decreaseterminalfontsize",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_addnewterminalsession",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_removeterminalsession",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_clearallterminalsessions",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_logtoactiveterminal",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_setactiveterminaldir",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_logtoterminal",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_processclicommand",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_clearallterminallogs",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L202",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_increaseterminalfontsize",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_setterminalfontsize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_decreaseterminalfontsize",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_setterminalfontsize",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_addnewterminalsession",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalsession",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_clearallterminalsessions",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalsession",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_logtoterminal",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_logtoactiveterminal",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_processclicommand",
+      "target": "app_src_main_kotlin_com_example_viewmodel_terminalviewmodel_terminalviewmodel_clearallterminalsessions",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/TerminalViewModel.kt",
+      "source_location": "L190",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "geminiapi_content",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L245",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "geminiapi_part",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "geminiapi_generatecontentrequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L250",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openroutermessage",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L278",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "app_src_main_kotlin_com_example_viewmodel_chatviewmodel_chatviewmodel_sendmessage",
+      "target": "app_src_main_kotlin_com_example_api_openrouterclient_openrouterrequest",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "app/src/main/kotlin/com/example/viewmodel/ChatViewModel.kt",
+      "source_location": "L294",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
