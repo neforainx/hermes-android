@@ -27,7 +27,7 @@ android {
         versionName = "1.0.0"
 
         buildConfigField("String", "GEMINI_API_KEY", "\"$geminiApiKey\"")
-        buildConfigField("String", "PLACEHOLDER_TELEGRAM_TOKEN", "\"8123456789:PLACEHOLDER_REPLACE_IN_LOCAL_PROPERTIES\"")
+        buildConfigField("String", "PLACEHOLDER_TELEGRAM_TOKEN", "\"8123456789:***\"")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -96,6 +96,6 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.core.splashscreen)
 
-    // Serialization
-    implementation(libs.kotlinx.serialization.json)
+    // Additional Serialization
     implementation(libs.kotlinx.serialization.core)
+}
