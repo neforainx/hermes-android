@@ -17,12 +17,12 @@ val geminiApiKey = envProperties.getProperty("GEMINI_API_KEY") ?: "GEMINI_API_KE
 
 android {
     namespace = "com.example"
-    compileSdk = 36
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.aistudio.hermes.pkwsva"
         minSdk = 26
-        targetSdk = 36
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
 
@@ -56,7 +56,7 @@ android {
         buildConfig = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
+        kotlinCompilerExtensionVersion = "1.5.11"
     }
     packaging {
         resources {
