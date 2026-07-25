@@ -3,10 +3,10 @@
 set -e
 
 GRADLE_HOME="${HOME}/.gradle"
-GRADLE_VERSION="8.5"
-GRADLE_ZIP="gradle-${GRADLE_VERSION}-bin.zip"
+GRADLE_VERSION="8.7"
+GRADLE_ZIP="gradle-${GRADLE_VERSION}-all.zip"
 GRADLE_URL="https://services.gradle.org/distributions/${GRADLE_ZIP}"
-GRADLE_INSTALL="${GRADLE_HOME}/wrapper/dists/gradle-${GRADLE_VERSION}/gradle-${GRADLE_VERSION}"
+GRADLE_INSTALL="${GRADLE_HOME}/wrapper/dists/gradle-${GRADLE_VERSION}-all/gradle-${GRADLE_VERSION}"
 
 # Download and extract Gradle if not present
 if [ ! -d "${GRADLE_INSTALL}" ]; then

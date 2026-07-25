@@ -77,9 +77,9 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
 
     // Room Database
-    implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
-    ksp(libs.room.compiler)
+    implementation(libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
 
     // Retrofit & Serialization
     implementation(libs.retrofit)
@@ -94,7 +94,7 @@ dependencies {
     // Foreground Service & Notifications
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.splashscreen)
 
     // Additional Serialization
     implementation(libs.kotlinx.serialization.core)
