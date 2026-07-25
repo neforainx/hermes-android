@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.ksp)
 }
 
 val envFile = rootProject.file(".env")
@@ -79,6 +80,7 @@ dependencies {
     // Room Database
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    ksp(libs.androidx.room.compiler)
 
     // Retrofit & Serialization
     implementation(libs.retrofit)
