@@ -4,7 +4,15 @@ import android.app.Application
 import android.speech.tts.TextToSpeech
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.ipc.HermesSocketClient
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.viewmodel.CreationExtras
+import androidx.lifecycle.viewmodel.initializer
+import androidx.lifecycle.viewmodel.viewModelFactory
+import com.example.R
+import com.example.network.RetrofitClient
+import com.example.network.OpenRouterClient
+import com.example.network.OpenRouterApiService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*
@@ -12,50 +20,19 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.UUID
 
-// Sederhana: simpan pesan chat di memori
 data class ChatMessage(
     val id: String = UUID.randomUUID().toString(),
-    val sender: String, // "user", "hermes"
+    val sender: String,
     val text: String,
     val timestamp: Long = System.currentTimeMillis()
 )
 
-// --- ViewModel 1: ChatViewModel (Chat + AI logic only) ---
 class ChatViewModel(
-    application: Application,
-    private val settingsViewModel: SettingsViewModel,
-    private val terminalViewModel: TerminalViewModel
+    private val application: Application,
+    private val settingsViewModel: com.example.viewmodel.SettingsViewModel,
+    private val terminalViewModel: com.example.viewmodel.TerminalViewModel
 ) : AndroidViewModel(application) {
 
-    private val hermesClient = HermesSocketClient(application)
-
-    private var tts: TextToSpeech? = null
-
-    init {
-        tts = TextToSpeech(application) { status ->
-            if (status == TextToSpeech.SUCCESS) {
-                tts?.language = java.util.Locale.US
-            }
-        }
-
-        // Connect to Hermes daemon
-        viewModelScope.launch {
-            hermesClient.connect()
-        }
-    }
-
-    fun speak(text: String) {
-        tts?.speak(text, TextToSpeech.QUEUE_FLUSH, null, null)
-    }
-
-    override fun onCleared() {
-        super.onCleared()
-        tts?.stop()
-        tts?.shutdown()
-        hermesClient.disconnect()
-    }
-
-    // In-memory chat history (tanpa Room)
     private val _messages = mutableStateListOf<ChatMessage>()
     val messages: StateFlow<List<ChatMessage>> = _messages
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
@@ -74,307 +51,217 @@ class ChatViewModel(
         settingsViewModel.updateSoulMd(content)
     }
 
-    fun updateSandboxConfig(type: String, image: String, host: String, port: String, password: String = "") {
-        settingsViewModel.updateSandboxConfig(type, image, host, port, password)
-    }
-
-    fun updateGatewayConfig(tgEnabled: Boolean, dsEnabled: Boolean, hwEnabled: Boolean) {
-        settingsViewModel.updateGatewayConfig(tgEnabled, dsEnabled, hwEnabled)
-    }
-
-    fun updateGatewayFields(tgToken: String, tgChatId: String, dsUrl: String, dsChanId: String, vibMs: String, ttsAcc: String) {
-        settingsViewModel.updateGatewayFields(tgToken, tgChatId, dsUrl, dsChanId, vibMs, ttsAcc)
-    }
-
-    fun setTerminalFontSize(sizeSp: Int) {
+    fun updateTerminalFontSize(sizeSp: Int) {
         settingsViewModel.setTerminalFontSize(sizeSp)
     }
 
-    // Expose settings as StateFlow for UI binding
-    val apiProvider = settingsViewModel.apiProvider
-    val geminiApiKey = settingsViewModel.geminiApiKey
-    val nousApiKey = settingsViewModel.nousApiKey
-    val activeModel = settingsViewModel.activeModel
-    val soulMd = settingsViewModel.soulMd
-    val customApiBaseUrl = settingsViewModel.customApiBaseUrl
-    val customApiKey = settingsViewModel.customApiKey
-    val customModel = settingsViewModel.customModel
-    val sandboxType = settingsViewModel.sandboxType
-    val dockerImage = settingsViewModel.dockerImage
-    val sshHost = settingsViewModel.sshHost
-    val sshPort = settingsViewModel.sshPort
-    val sshPassword = settingsViewModel.sshPassword
-    val telegramEnabled = settingsViewModel.telegramEnabled
-    val discordEnabled = settingsViewModel.discordEnabled
-    val termuxHardwareEnabled = settingsViewModel.termuxHardwareEnabled
-    val telegramToken = settingsViewModel.telegramToken
-    val telegramChatId = settingsViewModel.telegramChatId
-    val discordWebhookUrl = settingsViewModel.discordWebhookUrl
-    val discordChannelId = settingsViewModel.discordChannelId
-    val vibrateDurationMs = settingsViewModel.vibrateDurationMs
-    val ttsLanguageAccent = settingsViewModel.ttsLanguageAccent
-    val terminalFontSize = settingsViewModel.terminalFontSize
-
-    // Terminal logs stream (delegated to TerminalViewModel)
     val terminalLogs = terminalViewModel.terminalLogs
 
     fun logToTerminal(line: String) {
         terminalViewModel.logToTerminal(line)
     }
 
+    fun speak(text: String) {
+        val tts = android.speech.tts.TextToSpeech(application) { status ->
+            if (status == android.speech.tts.TextToSpeech.SUCCESS) {
+            }
+        }
+        tts.speak(text, android.speech.tts.TextToSpeech.QUEUE_FLUSH, null, null)
+        tts.shutdown()
+    }
+
     fun sendMessage(inputText: String) {
         if (inputText.isBlank() || isSending.value) return
+        if (inputText.trim().startsWith("/")) {
+            handleSlashCommand(inputText.trim())
+            return
+        }
 
         viewModelScope.launch {
             try {
-                if (inputText.trim().startsWith("/")) {
-                    // Parse slash commands locally
-                    val trimmed = inputText.trim()
-                    val parts = trimmed.split(" ", limit = 2)
-                    val cmd = parts[0].lowercase()
-                    val arg = if (parts.size > 1) parts[1].trim() else ""
-
-                    // Save user command message
-                    val userMsg = ChatMessage(sender = "user", text = inputText)
-                    _messages.add(userMsg)
-                    logToTerminal("USER CMD: $inputText")
-
-                    delay(400)
-
-                    when (cmd) {
-                        "/help" -> {
-                            val helpText = "PERINTAH UTAMA HERMES AI:\n" +
-                                    "• /help - Menampilkan daftar perintah ini\n" +
-                                    "• /model <nama_model> - Memilih model AI yang aktif\n" +
-                                    "• /provider <gemini|nous> - Mengganti penyedia AI (Gemini atau Nous)\n" +
-                                    "• /key <api_key> - Mengatur kunci API untuk penyedia saat ini\n" +
-                                    "• /clear - Menghapus seluruh riwayat percakapan\n" +
-                                    "• /file - Petunjuk cara melampirkan berkas"
-                            _messages.add(ChatMessage(sender = "hermes", text = helpText))
-                            logToTerminal("SYSTEM: Rendered Slash Help Catalog")
-                        }
-                        "/provider" -> {
-                            if (arg != "gemini" && arg != "nous") {
-                                _messages.add(ChatMessage(sender = "hermes", text = "ERROR: Penyedia harus berupa 'gemini' atau 'nous'."))
-                            } else {
-                                val defaultModel = if (arg == "gemini") "gemini-3.5-flash" else "nousresearch/hermes-3-llama-3.1-8b"
-                                updateSettings(arg, settingsViewModel.geminiApiKey.value, settingsViewModel.nousApiKey.value, defaultModel)
-                                _messages.add(ChatMessage(sender = "hermes", text = "SISTEM: Mengganti penyedia AI ke: ${arg.uppercase()}"))
-                            }
-                        }
-                        "/model" -> {
-                            if (arg.isBlank()) {
-                                _messages.add(ChatMessage(sender = "hermes", text = "ERROR: Harap tentukan nama model. Saat ini: ${activeModel.value}"))
-                            } else {
-                                updateSettings(settingsViewModel.apiProvider.value, settingsViewModel.geminiApiKey.value, settingsViewModel.nousApiKey.value, arg)
-                                _messages.add(ChatMessage(sender = "hermes", text = "SISTEM: Mengaktifkan model AI baru: '$arg'"))
-                            }
-                        }
-                        "/key" -> {
-                            if (arg.isBlank()) {
-                                _messages.add(ChatMessage(sender = "hermes", text = "ERROR: Key cannot be empty."))
-                            } else {
-                                if (settingsViewModel.apiProvider.value == "gemini") {
-                                    updateSettings("gemini", arg, settingsViewModel.nousApiKey.value, settingsViewModel.activeModel.value)
-                                } else {
-                                    updateSettings("nous", settingsViewModel.geminiApiKey.value, arg, settingsViewModel.activeModel.value)
-                                }
-                                _messages.add(ChatMessage(sender = "hermes", text = "SYSTEM: Updated API credentials securely for current provider."))
-                            }
-                        }
-                        "/clear" -> {
-                            _messages.clear()
-                            logToTerminal("SYSTEM: Purged conversation history.")
-                        }
-                        "/clear-sessions" -> {
-                            terminalViewModel.clearAllTerminalSessions()
-                            _messages.add(ChatMessage(sender = "hermes", text = "SISTEM: Reset all terminal sessions and purged logs successfully."))
-                            logToTerminal("SYSTEM: Reset all terminal sessions.")
-                        }
-                        "/file" -> {
-                            _messages.add(ChatMessage(sender = "hermes", text = "SYSTEM: Click the paperclip attachment icon on the chat bar to select and attach workspace files."))
-                        }
-                        else -> {
-                            _messages.add(ChatMessage(sender = "hermes", text = "ERROR: Command '$cmd' not recognized. Type /help for options."))
-                        }
-                    }
-                    return@launch
-                }
-
                 isSending.value = true
 
-                // 1. Save user message
                 val userMsg = ChatMessage(sender = "user", text = inputText)
                 _messages.add(userMsg)
                 logToTerminal("USER: $inputText")
 
-                // 2. Prepare Prompt and Run API call based on Provider
-                val responseText = withContext(Dispatchers.IO) {
-                    try {
-                        val provider = settingsViewModel.apiProvider.value
-                        val model = if (provider == "custom") settingsViewModel.customModel.value else settingsViewModel.activeModel.value
-                        val instructionText = settingsViewModel.soulMd.value
-
-                        if (provider == "gemini") {
-                            var key = settingsViewModel.geminiApiKey.value.trim()
-                            if (key.isEmpty()) {
-                                key = BuildConfig.GEMINI_API_KEY
-                            }
-                            if (key.isEmpty()) {
-                                "Hello! I am Hermes, your Personal AI Agent. To activate my actual Gemini intelligence, please configure your `GEMINI_API_KEY` securely in AI Studio's Secrets panel or settings."
-                            } else {
-                                try {
-                                    val history = _messages.filter { it.sender != "tool" }
-                                    val contentsPayload = history.map {
-                                        Content(
-                                            parts = listOf(Part(text = it.text)),
-                                            role = if (it.sender == "user") "user" else "model"
-                                        )
-                                    }
-                                    val request = GenerateContentRequest(
-                                        contents = contentsPayload,
-                                        systemInstruction = Content(
-                                            parts = listOf(Part(text = instructionText))
-                                        )
-                                    )
-                                    val response = RetrofitClient.service.generateContent(
-                                        model = model,
-                                        apiKey = key,
-                                        request = request
-                                    )
-                                    response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text
-                                        ?: "No response from Gemini API."
-                                } catch (e: Exception) {
-                                    logToTerminal("ERROR: Gemini API failed: ${e.message}")
-                                    "Failed to connect to Gemini API. Please check your API key and network connection."
-                                }
-                            }
-                        } else if (provider == "nous") {
-                            val key = settingsViewModel.nousApiKey.value.trim()
-                            if (key.isEmpty()) {
-                                "Hello! I am Hermes, your Personal AI Agent. To connect using Nous Research (OpenRouter), please specify your OpenRouter API Key in the settings."
-                            } else {
-                                try {
-                                    val history = _messages.filter { it.sender != "tool" }
-                                    val messagesPayload = mutableListOf<OpenRouterMessage>()
-
-                                    // Add system prompt first
-                                    messagesPayload.add(
-                                        OpenRouterMessage(
-                                            role = "system",
-                                            content = instructionText
-                                        )
-                                    )
-
-                                    // Add history
-                                    messagesPayload.addAll(
-                                        history.map {
-                                            OpenRouterMessage(
-                                                role = if (it.sender == "user") "user" else "assistant",
-                                                content = it.text
-                                            )
-                                        }
-                                    )
-
-                                    val request = OpenRouterRequest(
-                                        model = model,
-                                        messages = messagesPayload
-                                    )
-
-                                    val response = OpenRouterClient.service.generateContent(
-                                        authorization = "Bearer $key",
-                                        request = request
-                                    )
-
-                                    response.choices?.firstOrNull()?.message?.content
-                                        ?: response.error?.message
-                                        ?: "No response from OpenRouter API."
-                                } catch (e: Exception) {
-                                    logToTerminal("ERROR: OpenRouter API failed: ${e.message}")
-                                    "Failed to connect to OpenRouter API. Please check your API key and network connection."
-                                }
-                            }
-                        } else if (provider == "custom") {
-                            val key = settingsViewModel.customApiKey.value.trim()
-                            val baseUrl = settingsViewModel.customApiBaseUrl.value.trim()
-                            if (baseUrl.isEmpty() || key.isEmpty()) {
-                                "Hello! I am Hermes, your Personal AI Agent. To connect using your Custom Provider, please specify both the Base URL and API Key in your Profile settings."
-                            } else {
-                                try {
-                                    val history = _messages.filter { it.sender != "tool" }
-                                    val messagesPayload = mutableListOf<OpenRouterMessage>()
-
-                                    // Add system prompt first
-                                    messagesPayload.add(
-                                        OpenRouterMessage(
-                                            role = "system",
-                                            content = instructionText
-                                        )
-                                    )
-
-                                    // Add history
-                                    messagesPayload.addAll(
-                                        history.map {
-                                            OpenRouterMessage(
-                                                role = if (it.sender == "user") "user" else "assistant",
-                                                content = it.text
-                                            )
-                                        }
-                                    )
-
-                                    val request = OpenRouterRequest(
-                                        model = model,
-                                        messages = messagesPayload
-                                    )
-
-                                    val service = getCustomService(baseUrl)
-                                    val response = service.generateContent(
-                                        authorization = "Bearer $key",
-                                        request = request
-                                    )
-
-                                    response.choices?.firstOrNull()?.message?.content
-                                        ?: response.error?.message
-                                        ?: "No response from Custom Provider API."
-                                } catch (e: Exception) {
-                                    logToTerminal("ERROR: Custom Provider API failed: ${e.message}")
-                                    "Failed to connect to Custom Provider API. Please check your API key and base URL."
-                                }
-                            }
-                        } else {
-                            "Unknown AI Provider: $provider"
-                        }
-                    } catch (e: Exception) {
-                        logToTerminal("ERROR: ${e.message ?: e.javaClass.simpleName}")
-                        "Failed to get response. Please try again."
-                    }
+                val responseText = runCatching {
+                    withContext(Dispatchers.IO) { callProvider(inputText) }
+                }.getOrElse { e ->
+                    logToTerminal("ERROR: ${e.message ?: e::class.java.simpleName}")
+                    "Failed to get response. Please try again."
                 }
 
-                // 3. Save Model response
                 _messages.add(ChatMessage(sender = "hermes", text = responseText))
                 logToTerminal("HERMES: ${responseText.take(60)}...")
-
-                isSending.value = false
             } catch (e: Exception) {
-                logToTerminal("ERROR: ${e.message ?: e.javaClass.simpleName}")
+                logToTerminal("ERROR: ${e.message ?: e::class.java.simpleName}")
+            } finally {
                 isSending.value = false
             }
         }
     }
 
-    fun clearHistory() {
-        _messages.clear()
-        logToTerminal("SYSTEM: Chat history cleared.")
+    private fun handleSlashCommand(inputText: String) {
+        val trimmed = inputText.trim()
+        val parts = trimmed.split(" ", limit = 2)
+        val cmd = parts.firstOrNull()?.lowercase() ?: ""
+        val arg = parts.getOrNull(1)?.trim() ?: ""
+
+        val reply = when (cmd) {
+            "/help" -> buildString {
+                appendLine("PERINTAH UTAMA HERMES AI:")
+                appendLine("• /help - Menampilkan daftar perintah ini")
+                appendLine("• /model <nama_model> - Memilih model AI yang aktif")
+                appendLine("• /provider <gemini|nous> - Mengganti penyedia AI (Gemini atau Nous)")
+                appendLine("• /key <api_key> - Mengatur kunci API untuk penyedia saat ini")
+                appendLine("• /clear - Menghapus seluruh riwayat percakapan")
+                appendLine("• /file - Petunjuk cara melampirkan berkas")
+            }
+            "/clear" -> {
+                _messages.clear()
+                logToTerminal("SYSTEM: Purged conversation history.")
+                return
+            }
+            "/clear-sessions" -> {
+                terminalViewModel.clearAllTerminalSessions()
+                "SISTEM: Reset all terminal sessions and purged logs successfully."
+            }
+            "/provider" -> {
+                if (arg !in listOf("gemini", "nous")) {
+                    "ERROR: Penyedia harus berupa 'gemini' atau 'nous'."
+                } else {
+                    val model = if (arg == "gemini") "gemini-2.5-flash" else "nousresearch/hermes-3-llama-3.1-8b"
+                    settingsViewModel.updateSettings(arg, settingsViewModel.geminiApiKey.value, settingsViewModel.nousApiKey.value, model)
+                    _messages.add(ChatMessage(sender = "hermes", text = "SISTEM: Switching AI provider to: ${arg.uppercase()}"))
+                    return
+                }
+            }
+            "/model" -> {
+                if (arg.isBlank()) "ERROR: Please specify a model. Current: ${settingsViewModel.activeModel.value}"
+                else {
+                    settingsViewModel.updateSettings(settingsViewModel.apiProvider.value, settingsViewModel.geminiApiKey.value, settingsViewModel.nousApiKey.value, arg)
+                    "SISTEM: Active model updated to '$arg'"
+                }
+            }
+            "/key" -> {
+                if (arg.isBlank()) "ERROR: Key cannot be empty."
+                else {
+                    if (settingsViewModel.apiProvider.value == "gemini") settingsViewModel.updateSettings("gemini", arg, settingsViewModel.nousApiKey.value, settingsViewModel.activeModel.value)
+                    else settingsViewModel.updateSettings("nous", settingsViewModel.geminiApiKey.value, arg, settingsViewModel.activeModel.value)
+                    "SYSTEM: Updated API credentials for current provider."
+                }
+            }
+            "/file" -> "SYSTEM: Click the paperclip attachment icon on the chat bar to select and attach workspace files."
+            else -> "ERROR: Command '$cmd' not recognized. Type /help for options."
+        }
+
+        if (reply.isNotBlank()) {
+            _messages.add(ChatMessage(sender = "hermes", text = reply))
+            logToTerminal("SYSTEM: $reply")
+        }
     }
 
-    fun getCustomService(baseUrl: String): OpenRouterApiService {
-        val sanitizedBaseUrl = if (baseUrl.endsWith("/")) baseUrl else "$baseUrl/"
+    private suspend fun callProvider(inputText: String): String {
+        val provider = settingsViewModel.apiProvider.value
+        val model = if (provider == "custom") settingsViewModel.customModel.value else settingsViewModel.activeModel.value
+        val systemInstruction = settingsViewModel.soulMd.value
+
+        return when (provider) {
+            "gemini" -> {
+                val key = settingsViewModel.geminiApiKey.value.trim().ifEmpty { com.example.BuildConfig.GEMINI_API_KEY }
+                if (key.isBlank()) {
+                    "Hello! I am Hermes, your Personal AI Agent. To activate my actual Gemini intelligence, please configure your `GEMINI_API_KEY` securely in AI Studio's Secrets panel or settings."
+                } else {
+                    val history = _messages.filter { it.sender != "tool" }.takeLast(20)
+                    val contentsPayload = history.map {
+                        com.example.network.Content(
+                            parts = listOf(com.example.network.Part(text = it.text)),
+                            role = if (it.sender == "user") "user" else "model"
+                        )
+                    }
+                    val request = com.example.network.GenerateContentRequest(
+                        contents = contentsPayload,
+                        systemInstruction = com.example.network.Content(parts = listOf(com.example.network.Part(text = systemInstruction)))
+                    )
+                    val response = RetrofitClient.service.generateContent(model = model, apiKey = key, request = request)
+                    response.candidates?.firstOrNull()?.content?.parts?.firstOrNull()?.text
+                        ?: "No response from Gemini API."
+                }
+            }
+            "nous" -> {
+                val key = settingsViewModel.nousApiKey.value.trim()
+                if (key.isBlank()) {
+                    "Hello! I am Hermes, your Personal AI Agent. To connect using Nous Research (OpenRouter), please specify your OpenRouter API Key in the settings."
+                } else {
+                    val messagesPayload = mutableListOf<com.example.network.OpenRouterMessage>().apply {
+                        add(com.example.network.OpenRouterMessage(role = "system", content = systemInstruction))
+                        addAll(_messages.filter { it.sender != "tool" }.takeLast(20).map {
+                            com.example.network.OpenRouterMessage(
+                                role = if (it.sender == "user") "user" else "assistant",
+                                content = it.text
+                            )
+                        })
+                    }
+                    val request = com.example.network.OpenRouterRequest(model = model, messages = messagesPayload)
+                    val response = OpenRouterClient.service.generateContent(authorization = "Bearer $key", request = request)
+                    response.choices?.firstOrNull()?.message?.content
+                        ?: response.error?.message
+                        ?: "No response from OpenRouter API."
+                }
+            }
+            "custom" -> {
+                val key = settingsViewModel.customApiKey.value.trim()
+                val baseUrl = settingsViewModel.customApiBaseUrl.value.trim()
+                if (baseUrl.isBlank() || key.isBlank()) {
+                    "Hello! I am Hermes, your Personal AI Agent. To connect using your Custom Provider, please specify both the Base URL and API Key in your Profile settings."
+                } else {
+                    val messagesPayload = mutableListOf<com.example.network.OpenRouterMessage>().apply {
+                        add(com.example.network.OpenRouterMessage(role = "system", content = systemInstruction))
+                        addAll(_messages.filter { it.sender != "tool" }.takeLast(20).map {
+                            com.example.network.OpenRouterMessage(
+                                role = if (it.sender == "user") "user" else "assistant",
+                                content = it.text
+                            )
+                        })
+                    }
+                    val request = com.example.network.OpenRouterRequest(model = model, messages = messagesPayload)
+                    val service = buildCustomService(baseUrl)
+                    val response = service.generateContent(authorization = "Bearer $key", request = request)
+                    response.choices?.firstOrNull()?.message?.content
+                        ?: response.error?.message
+                        ?: "No response from Custom Provider API."
+                }
+            }
+            else -> "Unknown AI Provider: $provider"
+        }
+    }
+
+    private fun buildCustomService(baseUrl: String): OpenRouterApiService {
+        val finalBaseUrl = if (baseUrl.endsWith("/")) baseUrl else "$baseUrl/"
         val json = kotlinx.serialization.json.Json { ignoreUnknownKeys = true }
-        val retrofit = Retrofit.Builder()
-            .baseUrl(sanitizedBaseUrl)
-            .client(RetrofitClient.okHttpClient) // Use shared client with cert pinning
+        return retrofit2.Retrofit.Builder()
+            .baseUrl(finalBaseUrl)
+            .client(com.example.network.RetrofitClient.okHttpClient)
             .addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
             .build()
-        return retrofit.create(OpenRouterApiService::class.java)
+            .create(OpenRouterApiService::class.java)
+    }
+
+    companion object {
+        val Factory: ViewModelProvider.Factory = viewModelFactory {
+            initializer {
+                val app = this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as Application
+                val settingsViewModel = ViewModelProvider(
+                    app,
+                    ViewModelProvider.Factory
+                )[com.example.viewmodel.SettingsViewModel::class.java]
+                val terminalViewModel = ViewModelProvider(
+                    app,
+                    ViewModelProvider.Factory
+                )[com.example.viewmodel.TerminalViewModel::class.java]
+                ChatViewModel(app, settingsViewModel, terminalViewModel)
+            }
+        }
     }
 }
