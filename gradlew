@@ -3,7 +3,7 @@
 set -e
 
 GRADLE_HOME="${HOME}/.gradle"
-GRADLE_VERSION="8.9"
+GRADLE_VERSION="8.13"
 GRADLE_ZIP="gradle-${GRADLE_VERSION}-all.zip"
 GRADLE_URL="https://services.gradle.org/distributions/${GRADLE_ZIP}"
 GRADLE_INSTALL="${GRADLE_HOME}/wrapper/dists/gradle-${GRADLE_VERSION}-all/gradle-${GRADLE_VERSION}"

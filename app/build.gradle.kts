@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.ksp)
 }
 
 val envFile = rootProject.file(".env")
@@ -72,10 +73,10 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.navigation.compose)
 
-    // Room Database (removed to keep build stable)
-    // implementation(libs.androidx.room.runtime)
-    // implementation(libs.androidx.room.ktx)
-    // ksp(libs.androidx.room.compiler)
+    // Room Database
+    implementation(libs.room.runtime)
+    implementation(libs.room.ktx)
+    ksp(libs.room.compiler)
 
     // Retrofit & Serialization
     implementation(libs.retrofit)
@@ -87,9 +88,9 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.core)
 
-    // Splash Screen
+    // Foreground Service & Notifications
     implementation(libs.androidx.splashscreen)
 
-    // Serialization
+    // Additional Serialization
     implementation(libs.kotlinx.serialization.core)
 }
