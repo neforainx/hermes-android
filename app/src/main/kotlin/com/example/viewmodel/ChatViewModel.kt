@@ -352,7 +352,6 @@ class ChatViewModel(
             isSending.value = false
         }
     }
-}
 
     fun clearHistory() {
         viewModelScope.launch {

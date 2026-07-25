@@ -92,8 +92,6 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
 
     // Foreground Service & Notifications
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.splashscreen)
 
     // Additional Serialization
