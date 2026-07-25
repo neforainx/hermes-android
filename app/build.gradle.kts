@@ -1,11 +1,7 @@
-import java.io.File
-import java.util.Properties
-
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.ksp)
 }
 
 val envFile = rootProject.file(".env")
@@ -28,7 +24,6 @@ android {
 
         buildConfigField("String", "GEMINI_API_KEY", "\"$geminiApiKey\"")
         buildConfigField("String", "PLACEHOLDER_TELEGRAM_TOKEN", "\"8123456789:***\"")
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
             useSupportLibrary = true
@@ -56,7 +51,7 @@ android {
         buildConfig = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.11"
+        kotlinCompilerExtensionVersion = "1.7.8"
     }
     packaging {
         resources {
@@ -77,10 +72,10 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.navigation.compose)
 
-    // Room Database
-    implementation(libs.room.runtime)
-    implementation(libs.room.ktx)
-    ksp(libs.room.compiler)
+    // Room Database (removed to keep build stable)
+    // implementation(libs.androidx.room.runtime)
+    // implementation(libs.androidx.room.ktx)
+    // ksp(libs.androidx.room.compiler)
 
     // Retrofit & Serialization
     implementation(libs.retrofit)
@@ -92,9 +87,9 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.core)
 
-    // Foreground Service & Notifications
+    // Splash Screen
     implementation(libs.androidx.splashscreen)
 
-    // Additional Serialization
+    // Serialization
     implementation(libs.kotlinx.serialization.core)
 }
