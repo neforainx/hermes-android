@@ -4,7 +4,6 @@ import android.app.Application
 import android.speech.tts.TextToSpeech
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.database.*
 import com.example.ipc.HermesSocketClient
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -13,6 +12,14 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.UUID
 
+// Sederhana: simpan pesan chat di memori
+data class ChatMessage(
+    val id: String = UUID.randomUUID().toString(),
+    val sender: String, // "user", "hermes"
+    val text: String,
+    val timestamp: Long = System.currentTimeMillis()
+)
+
 // --- ViewModel 1: ChatViewModel (Chat + AI logic only) ---
 class ChatViewModel(
     application: Application,
@@ -20,8 +27,6 @@ class ChatViewModel(
     private val terminalViewModel: TerminalViewModel
 ) : AndroidViewModel(application) {
 
-    private val db = DatabaseProvider.getDatabase(application)
-    private val messageDao = db.messageDao()
     private val hermesClient = HermesSocketClient(application)
 
     private var tts: TextToSpeech? = null
@@ -32,7 +37,7 @@ class ChatViewModel(
                 tts?.language = java.util.Locale.US
             }
         }
-        
+
         // Connect to Hermes daemon
         viewModelScope.launch {
             hermesClient.connect()
@@ -50,7 +55,9 @@ class ChatViewModel(
         hermesClient.disconnect()
     }
 
-    val messages: StateFlow<List<MessageEntity>> = messageDao.getAllMessages()
+    // In-memory chat history (tanpa Room)
+    private val _messages = mutableStateListOf<ChatMessage>()
+    val messages: StateFlow<List<ChatMessage>> = _messages
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
 
     val isSending = MutableStateFlow(false)
@@ -127,9 +134,9 @@ class ChatViewModel(
                     val cmd = parts[0].lowercase()
                     val arg = if (parts.size > 1) parts[1].trim() else ""
 
-                    // Save user command message to DB
-                    val userMsg = MessageEntity(sender = "user", text = inputText)
-                    messageDao.insertMessage(userMsg)
+                    // Save user command message
+                    val userMsg = ChatMessage(sender = "user", text = inputText)
+                    _messages.add(userMsg)
                     logToTerminal("USER CMD: $inputText")
 
                     delay(400)
@@ -143,52 +150,52 @@ class ChatViewModel(
                                     "• /key <api_key> - Mengatur kunci API untuk penyedia saat ini\n" +
                                     "• /clear - Menghapus seluruh riwayat percakapan\n" +
                                     "• /file - Petunjuk cara melampirkan berkas"
-                            messageDao.insertMessage(MessageEntity(sender = "hermes", text = helpText))
+                            _messages.add(ChatMessage(sender = "hermes", text = helpText))
                             logToTerminal("SYSTEM: Rendered Slash Help Catalog")
                         }
                         "/provider" -> {
                             if (arg != "gemini" && arg != "nous") {
-                                messageDao.insertMessage(MessageEntity(sender = "hermes", text = "ERROR: Penyedia harus berupa 'gemini' atau 'nous'."))
+                                _messages.add(ChatMessage(sender = "hermes", text = "ERROR: Penyedia harus berupa 'gemini' atau 'nous'."))
                             } else {
                                 val defaultModel = if (arg == "gemini") "gemini-3.5-flash" else "nousresearch/hermes-3-llama-3.1-8b"
                                 updateSettings(arg, settingsViewModel.geminiApiKey.value, settingsViewModel.nousApiKey.value, defaultModel)
-                                messageDao.insertMessage(MessageEntity(sender = "hermes", text = "SISTEM: Mengganti penyedia AI ke: ${arg.uppercase()}"))
+                                _messages.add(ChatMessage(sender = "hermes", text = "SISTEM: Mengganti penyedia AI ke: ${arg.uppercase()}"))
                             }
                         }
                         "/model" -> {
                             if (arg.isBlank()) {
-                                messageDao.insertMessage(MessageEntity(sender = "hermes", text = "ERROR: Harap tentukan nama model. Saat ini: ${activeModel.value}"))
+                                _messages.add(ChatMessage(sender = "hermes", text = "ERROR: Harap tentukan nama model. Saat ini: ${activeModel.value}"))
                             } else {
                                 updateSettings(settingsViewModel.apiProvider.value, settingsViewModel.geminiApiKey.value, settingsViewModel.nousApiKey.value, arg)
-                                messageDao.insertMessage(MessageEntity(sender = "hermes", text = "SISTEM: Mengaktifkan model AI baru: '$arg'"))
+                                _messages.add(ChatMessage(sender = "hermes", text = "SISTEM: Mengaktifkan model AI baru: '$arg'"))
                             }
                         }
                         "/key" -> {
                             if (arg.isBlank()) {
-                                messageDao.insertMessage(MessageEntity(sender = "hermes", text = "ERROR: Key cannot be empty."))
+                                _messages.add(ChatMessage(sender = "hermes", text = "ERROR: Key cannot be empty."))
                             } else {
                                 if (settingsViewModel.apiProvider.value == "gemini") {
                                     updateSettings("gemini", arg, settingsViewModel.nousApiKey.value, settingsViewModel.activeModel.value)
                                 } else {
                                     updateSettings("nous", settingsViewModel.geminiApiKey.value, arg, settingsViewModel.activeModel.value)
                                 }
-                                messageDao.insertMessage(MessageEntity(sender = "hermes", text = "SYSTEM: Updated API credentials securely for current provider."))
+                                _messages.add(ChatMessage(sender = "hermes", text = "SYSTEM: Updated API credentials securely for current provider."))
                             }
                         }
                         "/clear" -> {
-                            messageDao.clearAllMessages()
-                            logToTerminal("SYSTEM: Purged conversation database.")
+                            _messages.clear()
+                            logToTerminal("SYSTEM: Purged conversation history.")
                         }
                         "/clear-sessions" -> {
                             terminalViewModel.clearAllTerminalSessions()
-                            messageDao.insertMessage(MessageEntity(sender = "hermes", text = "SYSTEM: Reset all terminal sessions and purged logs successfully."))
+                            _messages.add(ChatMessage(sender = "hermes", text = "SISTEM: Reset all terminal sessions and purged logs successfully."))
                             logToTerminal("SYSTEM: Reset all terminal sessions.")
                         }
                         "/file" -> {
-                            messageDao.insertMessage(MessageEntity(sender = "hermes", text = "SYSTEM: Click the paperclip attachment icon on the chat bar to select and attach workspace files."))
+                            _messages.add(ChatMessage(sender = "hermes", text = "SYSTEM: Click the paperclip attachment icon on the chat bar to select and attach workspace files."))
                         }
                         else -> {
-                            messageDao.insertMessage(MessageEntity(sender = "hermes", text = "ERROR: Command '$cmd' not recognized. Type /help for options."))
+                            _messages.add(ChatMessage(sender = "hermes", text = "ERROR: Command '$cmd' not recognized. Type /help for options."))
                         }
                     }
                     return@launch
@@ -196,9 +203,9 @@ class ChatViewModel(
 
                 isSending.value = true
 
-                // 1. Save user message to database
-                val userMsg = MessageEntity(sender = "user", text = inputText)
-                messageDao.insertMessage(userMsg)
+                // 1. Save user message
+                val userMsg = ChatMessage(sender = "user", text = inputText)
+                _messages.add(userMsg)
                 logToTerminal("USER: $inputText")
 
                 // 2. Prepare Prompt and Run API call based on Provider
@@ -214,10 +221,10 @@ class ChatViewModel(
                                 key = BuildConfig.GEMINI_API_KEY
                             }
                             if (key.isEmpty()) {
-                                "Hello! I am Hermes, your Personal AI Agent. To activate my actual Gemini intelligence, please configure your \`GEMINI_API_KEY\` securely in AI Studio's Secrets panel or settings."
+                                "Hello! I am Hermes, your Personal AI Agent. To activate my actual Gemini intelligence, please configure your `GEMINI_API_KEY` securely in AI Studio's Secrets panel or settings."
                             } else {
                                 try {
-                                    val history = messages.value.filter { it.sender != "tool" }
+                                    val history = _messages.filter { it.sender != "tool" }
                                     val contentsPayload = history.map {
                                         Content(
                                             parts = listOf(Part(text = it.text)),
@@ -248,7 +255,7 @@ class ChatViewModel(
                                 "Hello! I am Hermes, your Personal AI Agent. To connect using Nous Research (OpenRouter), please specify your OpenRouter API Key in the settings."
                             } else {
                                 try {
-                                    val history = messages.value.filter { it.sender != "tool" }
+                                    val history = _messages.filter { it.sender != "tool" }
                                     val messagesPayload = mutableListOf<OpenRouterMessage>()
 
                                     // Add system prompt first
@@ -294,7 +301,7 @@ class ChatViewModel(
                                 "Hello! I am Hermes, your Personal AI Agent. To connect using your Custom Provider, please specify both the Base URL and API Key in your Profile settings."
                             } else {
                                 try {
-                                    val history = messages.value.filter { it.sender != "tool" }
+                                    val history = _messages.filter { it.sender != "tool" }
                                     val messagesPayload = mutableListOf<OpenRouterMessage>()
 
                                     // Add system prompt first
@@ -337,27 +344,27 @@ class ChatViewModel(
                         } else {
                             "Unknown AI Provider: $provider"
                         }
+                    } catch (e: Exception) {
+                        logToTerminal("ERROR: ${e.message ?: e.javaClass.simpleName}")
+                        "Failed to get response. Please try again."
                     }
                 }
 
-                // 4. Save Model response to database
-                val hermesMsg = MessageEntity(sender = "hermes", text = responseText)
-                messageDao.insertMessage(hermesMsg)
+                // 3. Save Model response
+                _messages.add(ChatMessage(sender = "hermes", text = responseText))
                 logToTerminal("HERMES: ${responseText.take(60)}...")
 
                 isSending.value = false
+            } catch (e: Exception) {
+                logToTerminal("ERROR: ${e.message ?: e.javaClass.simpleName}")
+                isSending.value = false
             }
-        } catch (e: Exception) {
-            logToTerminal("ERROR: ${e.message ?: e.class.simpleName}")
-            isSending.value = false
         }
     }
 
     fun clearHistory() {
-        viewModelScope.launch {
-            messageDao.clearAllMessages()
-            logToTerminal("SYSTEM: Chat history cleared.")
-        }
+        _messages.clear()
+        logToTerminal("SYSTEM: Chat history cleared.")
     }
 
     fun getCustomService(baseUrl: String): OpenRouterApiService {
